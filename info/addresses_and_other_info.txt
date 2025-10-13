@@ -2,3 +2,46 @@ Model: DIR-615
 Firmware version: 3.0.5
 http://192.168.0.1
 http://10.84.193.69/admin/index.html
+
+ING!
+johnny@baby ~ [1]> sudo nmap --traceroute  10.84.193.69
+[sudo] password for johnny:            
+Starting Nmap 7.93 ( https://nmap.org ) at 2025-10-13 16:33 IST
+Nmap scan report for 10.84.193.69
+Host is up (0.030s latency).
+Not shown: 993 closed tcp ports (reset)
+PORT     STATE SERVICE
+53/tcp   open  domain
+80/tcp   open  http
+81/tcp   open  hosts2-ns
+443/tcp  open  https
+4445/tcp open  upnotifyp
+8888/tcp open  sun-answerbook
+9999/tcp open  abyss
+
+TRACEROUTE (using port 993/tcp)
+HOP RTT       ADDRESS
+1   114.50 ms 10.84.193.69
+
+Nmap done: 1 IP address (1 host up) scanned in 1.24 seconds
+johnny@baby ~> sudo nmap --traceroute  192.168.0.1
+Starting Nmap 7.93 ( https://nmap.org ) at 2025-10-13 16:33 IST
+Nmap scan report for dlinkrouter (192.168.0.1)
+Host is up (0.032s latency).
+Not shown: 993 closed tcp ports (reset)
+PORT     STATE SERVICE
+53/tcp   open  domain
+80/tcp   open  http
+81/tcp   open  hosts2-ns
+443/tcp  open  https
+4445/tcp open  upnotifyp
+8888/tcp open  sun-answerbook
+9999/tcp open  abyss
+MAC Address: 78:98:E8:13:5C:C1 (D-Link International)
+
+TRACEROUTE
+HOP RTT      ADDRESS
+1   31.62 ms dlinkrouter (192.168.0.1)
+
+Nmap done: 1 IP address (1 host up) scanned in 1.08 seconds
+johnny@baby ~> 
