@@ -2,3 +2,4 @@ https://support.dlink.com/resource/PRODUCTS/TM-G5240/REVA/TM-G5240_SECURITY_ADVI
 https://github.com/advisories/GHSA-87p8-v7c2-7pr3
 google search [D-link 615 wifi router Vulnerability exploit authentication .pdf]
 https://www.kb.cert.org/vuls/id/766427
+https://kb.cert.org/artifacts/cve-2019-16920.html?_gl=1*19rj13w*_gcl_au*NjMzMjQwODIzLjE3NjAzMzI2NjA.*_ga*MTQ2MjczNTc2Ny4xNzYwMzMyNjYw*_ga_87WECW6HCS*czE3NjAzMzI2NjAkbzEkZzEkdDE3NjAzMzM1MzYkajYwJGwwJGgw
