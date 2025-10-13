@@ -1,1 +1,2 @@
 https://support.dlink.com/resource/PRODUCTS/TM-G5240/REVA/TM-G5240_SECURITY_ADVISORY_1.00_EN.PDF
+https://github.com/advisories/GHSA-87p8-v7c2-7pr3
