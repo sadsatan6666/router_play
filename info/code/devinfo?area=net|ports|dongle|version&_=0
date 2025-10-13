@@ -1,0 +1,78 @@
+{
+  "result": {
+    "infoAreasStatus": {
+      "net": {
+        "createdAt": -1,
+        "expTimeSec": -1,
+        "mask": [
+          "lan",
+          "ipv4gw.",
+          "ipv6gw.",
+          "dsl."
+        ]
+      },
+      "ports": {
+        "createdAt": -1,
+        "expTimeSec": -1,
+        "mask": [
+          "availPorts."
+        ]
+      },
+      "dongle": {
+        "createdAt": -1,
+        "expTimeSec": -1,
+        "mask": [
+          "dongle."
+        ]
+      },
+      "version": {
+        "createdAt": -1,
+        "expTimeSec": -1,
+        "mask": [
+          "modelName",
+          "supportMail",
+          "supportSite",
+          "buildDate",
+          "modelId",
+          "supportTel",
+          "buildNotes",
+          "vendor",
+          "version",
+          "hwRevision",
+          "uptime",
+          "kernelHash",
+          "rootfsHash",
+          "bootHash",
+          "bootVersion",
+          "lang",
+          "deviceClass",
+          "serialNumber",
+          "deviceMac",
+          "bssid",
+          "deviceRebootTime",
+          "deviceResetTime",
+          "deviceLocalFwUploadTime",
+          "deviceLocalFwUpdateTime",
+          "sdkVersion",
+          "logoutTime"
+        ]
+      }
+    },
+    "accessLevel": 0,
+    "lan": [
+      {
+        "ip": "192.168.0.1",
+        "connection_status": "CableDisconnected",
+        "status": "CableDisconnected"
+      }
+    ],
+    "version": "3.0.5",
+    "modelName": "DIR-615",
+    "modelId": "DIR_615X_RT8196E",
+    "mobileAppForbidden": false,
+    "deviceMac": "78:98:e8:13:5c:c0",
+    "sdkVersion": 1,
+    "lang": "eng",
+    "logoutTime": 300000
+  }
+}
