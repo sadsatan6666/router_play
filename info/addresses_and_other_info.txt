@@ -1,2 +1,4 @@
+Model: DIR-615
+Firmware version: 3.0.5
 http://192.168.0.1
 http://10.84.193.69/admin/index.html
