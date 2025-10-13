@@ -1,0 +1,180 @@
+Nmap scan report for dlinkrouter (192.168.0.1)
+Host is up (0.076s latency).
+Not shown: 993 closed tcp ports (conn-refused)
+PORT     STATE SERVICE         VERSION
+53/tcp   open  domain          dnsmasq 2.78
+| dns-nsid: 
+|_  bind.version: dnsmasq-2.78
+80/tcp   open  http
+| fingerprint-strings: 
+|   FourOhFourRequest: 
+|     HTTP/1.1 200 OK
+|     Content-Security-Policy: default-src *; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; frame-ancestors 'self'
+|     X-Frame-Options: SAMEORIGIN
+|     X-XSS-Protection: 1; mode=block
+|     X-Content-Type-Options: nosniff
+|     Date: Thu, 01 Jan 1970 02:21:39 GMT
+|     Etag: "5dc421c2.1698"
+|     Content-Type: text/html
+|     Content-Length: 1698
+|     Connection: close
+|     Accept-Ranges: bytes
+|     <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" ng-app="error404" ng-controller="Error404Ctrl"><head><title ng-bind="'error404_title' | translate"></title><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta http-equiv="pragma" content="no-cache"><meta http-equiv="cache-control" content="no-cache"><me
+|   GenericLines: 
+|     HTTP/1.1 500 Server Error
+|     Content-Length: 42
+|     Date: Thu, 01 Jan 1970 02:21:39 GMT
+|     Connection: close
+|     Error 500: Server Error
+|     request: [
+|   GetRequest, HTTPOptions: 
+|     HTTP/1.1 303 See other
+|     Location: /admin/index.html
+|   RTSPRequest: 
+|     HTTP/1.1 500 Server Error
+|     Content-Length: 46
+|     Date: Thu, 01 Jan 1970 02:21:39 GMT
+|     Connection: close
+|     Error 500: Server Error
+|     request: [OPTIONS]
+|   X11Probe: 
+|     HTTP/1.1 500 Server Error
+|     Content-Length: 48
+|     Date: Thu, 01 Jan 1970 02:21:39 GMT
+|     Connection: close
+|     Error 500: Server Error
+|_    Client closed connection
+| http-title: Site doesn't have a title (text/html).
+|_Requested resource was /admin/index.html
+81/tcp   open  hosts2-ns?
+| fingerprint-strings: 
+|   DNSVersionBindReqTCP: 
+|     HTTP/1.1 500 Server Error
+|     Content-Length: 48
+|     Date: Thu, 01 Jan 1970 02:21:54 GMT
+|     Connection: close
+|     Error 500: Server Error
+|     Client closed connection
+|   FourOhFourRequest: 
+|     HTTP/1.1 303 See other
+|     Location: http://192.168.0.1/trouble/index.html?redirect_id=33ad2a6c15a597eb1229fd90935fee3e
+|   GenericLines: 
+|     HTTP/1.1 500 Server Error
+|     Content-Length: 42
+|     Date: Thu, 01 Jan 1970 02:21:49 GMT
+|     Connection: close
+|     Error 500: Server Error
+|     request: [
+|   GetRequest: 
+|     HTTP/1.1 303 See other
+|     Location: http://192.168.0.1/trouble/index.html?redirect_id=10309205687516ef0e176a4fb0d8ff6b
+|   HTTPOptions: 
+|     HTTP/1.1 303 See other
+|     Location: http://192.168.0.1/trouble/index.html?redirect_id=b05108ce3e69cbc6aae7e40e301212e5
+|   Kerberos, SSLSessionReq, TLSSessionReq, TerminalServerCookie: 
+|     HTTP/1.1 500 Server Error
+|     Content-Length: 48
+|     Date: Thu, 01 Jan 1970 02:22:07 GMT
+|     Connection: close
+|     Error 500: Server Error
+|     Client closed connection
+|   RPCCheck: 
+|     HTTP/1.1 500 Server Error
+|     Content-Length: 48
+|     Date: Thu, 01 Jan 1970 02:21:49 GMT
+|     Connection: close
+|     Error 500: Server Error
+|_    Client closed connection
+443/tcp  open  ssl/https?
+| ssl-cert: Subject: organizationName=D-Link
+| Not valid before: 2009-01-01T00:00:00
+|_Not valid after:  2030-01-01T00:00:00
+|_ssl-date: TLS randomness does not represent time
+4445/tcp open  ssl/upnotifyp?
+|_ssl-date: TLS randomness does not represent time
+| ssl-cert: Subject: organizationName=D-Link Ltd/stateOrProvinceName=Some-State/countryName=RU
+| Not valid before: 2016-11-16T12:00:10
+|_Not valid after:  2026-11-16T12:00:10
+8888/tcp open  sun-answerbook?
+| fingerprint-strings: 
+|   DNSStatusRequestTCP, DNSVersionBindReqTCP, FourOhFourRequest, GenericLines, GetRequest, HTTPOptions, Help, JavaRMI, LANDesk-RC, LDAPBindReq, LDAPSearchReq, LPDString, LSCP, NCP, NotesRPC, RPCCheck, RTSPRequest, TerminalServer, TerminalServerCookie, X11Probe, afp, giop, ms-sql-s: 
+|_    !<=>
+9999/tcp open  abyss?
+3 services unrecognized despite returning data. If you know the service/version, please submit the following fingerprints at https://nmap.org/cgi-bin/submit.cgi?new-service :
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port80-TCP:V=7.93%I=7%D=10/13%Time=68ECD74B%P=x86_64-pc-linux-gnu%r(Get
+SF:Request,37,"HTTP/1\.1\x20303\x20See\x20other\r\nLocation:\x20/admin/ind
+SF:ex\.html\r\n\r\n")%r(HTTPOptions,37,"HTTP/1\.1\x20303\x20See\x20other\r
+SF:\nLocation:\x20/admin/index\.html\r\n\r\n")%r(RTSPRequest,97,"HTTP/1\.1
+SF:\x20500\x20Server\x20Error\r\nContent-Length:\x2046\r\nDate:\x20Thu,\x2
+SF:001\x20Jan\x201970\x2002:21:39\x20GMT\r\nConnection:\x20close\r\n\r\nEr
+SF:ror\x20500:\x20Server\x20Error\nBad\x20request:\x20\[OPTIONS\]")%r(X11P
+SF:robe,99,"HTTP/1\.1\x20500\x20Server\x20Error\r\nContent-Length:\x2048\r
+SF:\nDate:\x20Thu,\x2001\x20Jan\x201970\x2002:21:39\x20GMT\r\nConnection:\
+SF:x20close\r\n\r\nError\x20500:\x20Server\x20Error\nClient\x20closed\x20c
+SF:onnection")%r(FourOhFourRequest,83B,"HTTP/1\.1\x20200\x20OK\r\nContent-
+SF:Security-Policy:\x20default-src\x20\*;\x20style-src\x20'self'\x20'unsaf
+SF:e-inline';\x20script-src\x20'self'\x20'unsafe-inline'\x20'unsafe-eval';
+SF:\x20frame-ancestors\x20'self'\r\nX-Frame-Options:\x20SAMEORIGIN\r\nX-XS
+SF:S-Protection:\x201;\x20mode=block\r\nX-Content-Type-Options:\x20nosniff
+SF:\r\nDate:\x20Thu,\x2001\x20Jan\x201970\x2002:21:39\x20GMT\r\nEtag:\x20\
+SF:"5dc421c2\.1698\"\r\nContent-Type:\x20text/html\r\nContent-Length:\x201
+SF:698\r\nConnection:\x20close\r\nAccept-Ranges:\x20bytes\r\n\r\n<!DOCTYPE
+SF:\x20html\x20PUBLIC\x20\"-//W3C//DTD\x20XHTML\x201\.0\x20Transitional//E
+SF:N\"\x20\"http://www\.w3\.org/TR/xhtml1/DTD/xhtml1-transitional\.dtd\"><
+SF:html\x20xmlns=\"http://www\.w3\.org/1999/xhtml\"\x20ng-app=\"error404\"
+SF:\x20ng-controller=\"Error404Ctrl\"><head><title\x20ng-bind=\"'error404_
+SF:title'\x20\|\x20translate\"></title><meta\x20http-equiv=\"Content-Type\
+SF:"\x20content=\"text/html;\x20charset=utf-8\"><meta\x20http-equiv=\"X-UA
+SF:-Compatible\"\x20content=\"IE=edge\"><meta\x20http-equiv=\"pragma\"\x20
+SF:content=\"no-cache\"><meta\x20http-equiv=\"cache-control\"\x20content=\
+SF:"no-cache\"><me")%r(GenericLines,93,"HTTP/1\.1\x20500\x20Server\x20Erro
+SF:r\r\nContent-Length:\x2042\r\nDate:\x20Thu,\x2001\x20Jan\x201970\x2002:
+SF:21:39\x20GMT\r\nConnection:\x20close\r\n\r\nError\x20500:\x20Server\x20
+SF:Error\nBad\x20request:\x20\[\r\n\r\]");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port81-TCP:V=7.93%I=7%D=10/13%Time=68ECD74B%P=x86_64-pc-linux-gnu%r(Get
+SF:Request,78,"HTTP/1\.1\x20303\x20See\x20other\r\nLocation:\x20http://192
+SF:\.168\.0\.1/trouble/index\.html\?redirect_id=10309205687516ef0e176a4fb0
+SF:d8ff6b\r\n\r\n")%r(HTTPOptions,78,"HTTP/1\.1\x20303\x20See\x20other\r\n
+SF:Location:\x20http://192\.168\.0\.1/trouble/index\.html\?redirect_id=b05
+SF:108ce3e69cbc6aae7e40e301212e5\r\n\r\n")%r(RPCCheck,99,"HTTP/1\.1\x20500
+SF:\x20Server\x20Error\r\nContent-Length:\x2048\r\nDate:\x20Thu,\x2001\x20
+SF:Jan\x201970\x2002:21:49\x20GMT\r\nConnection:\x20close\r\n\r\nError\x20
+SF:500:\x20Server\x20Error\nClient\x20closed\x20connection")%r(FourOhFourR
+SF:equest,78,"HTTP/1\.1\x20303\x20See\x20other\r\nLocation:\x20http://192\
+SF:.168\.0\.1/trouble/index\.html\?redirect_id=33ad2a6c15a597eb1229fd90935
+SF:fee3e\r\n\r\n")%r(GenericLines,93,"HTTP/1\.1\x20500\x20Server\x20Error\
+SF:r\nContent-Length:\x2042\r\nDate:\x20Thu,\x2001\x20Jan\x201970\x2002:21
+SF::49\x20GMT\r\nConnection:\x20close\r\n\r\nError\x20500:\x20Server\x20Er
+SF:ror\nBad\x20request:\x20\[\r\n\r\]")%r(DNSVersionBindReqTCP,99,"HTTP/1\
+SF:.1\x20500\x20Server\x20Error\r\nContent-Length:\x2048\r\nDate:\x20Thu,\
+SF:x2001\x20Jan\x201970\x2002:21:54\x20GMT\r\nConnection:\x20close\r\n\r\n
+SF:Error\x20500:\x20Server\x20Error\nClient\x20closed\x20connection")%r(SS
+SF:LSessionReq,99,"HTTP/1\.1\x20500\x20Server\x20Error\r\nContent-Length:\
+SF:x2048\r\nDate:\x20Thu,\x2001\x20Jan\x201970\x2002:22:07\x20GMT\r\nConne
+SF:ction:\x20close\r\n\r\nError\x20500:\x20Server\x20Error\nClient\x20clos
+SF:ed\x20connection")%r(TerminalServerCookie,99,"HTTP/1\.1\x20500\x20Serve
+SF:r\x20Error\r\nContent-Length:\x2048\r\nDate:\x20Thu,\x2001\x20Jan\x2019
+SF:70\x2002:22:07\x20GMT\r\nConnection:\x20close\r\n\r\nError\x20500:\x20S
+SF:erver\x20Error\nClient\x20closed\x20connection")%r(TLSSessionReq,99,"HT
+SF:TP/1\.1\x20500\x20Server\x20Error\r\nContent-Length:\x2048\r\nDate:\x20
+SF:Thu,\x2001\x20Jan\x201970\x2002:22:07\x20GMT\r\nConnection:\x20close\r\
+SF:n\r\nError\x20500:\x20Server\x20Error\nClient\x20closed\x20connection")
+SF:%r(Kerberos,99,"HTTP/1\.1\x20500\x20Server\x20Error\r\nContent-Length:\
+SF:x2048\r\nDate:\x20Thu,\x2001\x20Jan\x201970\x2002:22:07\x20GMT\r\nConne
+SF:ction:\x20close\r\n\r\nError\x20500:\x20Server\x20Error\nClient\x20clos
+SF:ed\x20connection");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port8888-TCP:V=7.93%I=7%D=10/13%Time=68ECD74B%P=x86_64-pc-linux-gnu%r(G
+SF:etRequest,4,"!<=>")%r(HTTPOptions,4,"!<=>")%r(FourOhFourRequest,4,"!<=>
+SF:")%r(JavaRMI,4,"!<=>")%r(LSCP,4,"!<=>")%r(GenericLines,4,"!<=>")%r(RTSP
+SF:Request,4,"!<=>")%r(RPCCheck,4,"!<=>")%r(DNSVersionBindReqTCP,4,"!<=>")
+SF:%r(DNSStatusRequestTCP,4,"!<=>")%r(Help,4,"!<=>")%r(TerminalServerCooki
+SF:e,4,"!<=>")%r(X11Probe,4,"!<=>")%r(LPDString,4,"!<=>")%r(LDAPSearchReq,
+SF:4,"!<=>")%r(LDAPBindReq,4,"!<=>")%r(LANDesk-RC,4,"!<=>")%r(TerminalServ
+SF:er,4,"!<=>")%r(NCP,4,"!<=>")%r(NotesRPC,4,"!<=>")%r(ms-sql-s,4,"!<=>")%
+SF:r(afp,4,"!<=>")%r(giop,4,"!<=>");
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 93.23 seconds
