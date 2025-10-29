@@ -1,0 +1,1 @@
+when login this is the URL which we make a request when making a first login attept [http://192.168.0.1/devinfo?area=notice&_=60051&need_auth=1&mandatory=1]
