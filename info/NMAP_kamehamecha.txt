@@ -1,0 +1,29 @@
+SF:ier,4,"!<=>")%r(VerifierAdvanced,4,"!<=>")%r(Socks5,4,"!<=>")%r(Socks4,
+SF:4,"!<=>")%r(OfficeScan,4,"!<=>")%r(ms-sql-s,4,"!<=>")%r(HELP4STOMP,4,"!
+SF:<=>")%r(Memcache,4,"!<=>")%r(beast2,4,"!<=>")%r(ibm-db2-das,4,"!<=>")%r
+SF:(pervasive-btrieve,4,"!<=>")%r(ajp,4,"!<=>")%r(hp-pjl,4,"!<=>")%r(afp,4
+SF:,"!<=>")%r(SqueezeCenter_CLI,4,"!<=>")%r(Arucer,4,"!<=>")%r(dominoconso
+SF:le,4,"!<=>")%r(drda,4,"!<=>")%r(ZendJavaBridge,4,"!<=>")%r(gkrellm,4,"!
+SF:<=>")%r(redis-server,4,"!<=>")%r(riak-pbc,4,"!<=>")%r(tarantool,4,"!<=>
+SF:")%r(couchbase-data,4,"!<=>")%r(epmd,4,"!<=>")%r(vp3,4,"!<=>")%r(kumo-s
+SF:erver,4,"!<=>")%r(metasploit-msgrpc,4,"!<=>")%r(hazelcast-http,4,"!<=>"
+SF:)%r(minecraft-ping,4,"!<=>")%r(erlang-node,4,"!<=>")%r(teamspeak-tcpque
+SF:ry-ver,4,"!<=>")%r(xmlsysd,4,"!<=>")%r(docker,4,"!<=>")%r(tor-versions,
+SF:4,"!<=>")%r(NJE,4,"!<=>")%r(tn3270,4,"!<=>")%r(giop,4,"!<=>")%r(OpenVPN
+SF:,4,"!<=>")%r(pcworx,4,"!<=>")%r(proconos,4,"!<=>")%r(niagara-fox,4,"!<=
+SF:>")%r(mqtt,4,"!<=>")%r(iperf3,4,"!<=>")%r(VersionRequest,4,"!<=>")%r(No
+SF:Machine,4,"!<=>")%r(JMON,4,"!<=>")%r(LibreOfficeImpressSCPair,4,"!<=>")
+SF:%r(rotctl,4,"!<=>")%r(SharpTV,4,"!<=>")%r(adbConnect,4,"!<=>")%r(pihole
+SF:Version,4,"!<=>")%r(teamtalk-login,4,"!<=>")%r(insteonPLM,4,"!<=>");
+MAC Address: 78:98:E8:13:5C:C1 (D-Link International)
+Aggressive OS guesses: D-Link DIR-300 WAP (Linux 2.6.21) (99%), Linux 2.6.23-gentoo-r3 (97%), ZyXEL o2 HomeBox 6641 router (96%), Belkin N300 WAP (Linux 2.6.30) (96%), DD-WRT v24-sp1 (Linux 2.4.36) (96%), OpenWrt White Russian 0.9 (Linux 2.4.30) (96%), Dell Integrated Remote Access Controller (iDRAC5) (95%), Dell Integrated Remote Access Controller (iDRAC6) (95%), Linux 2.6.8 - 2.6.30 (95%), Supermicro IPMI BMC (Linux 2.6.24) (95%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 1 hop
+
+TRACEROUTE
+HOP RTT     ADDRESS
+1   1.95 ms dlinkrouter (192.168.0.1)
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 1358.32 seconds
+johnny@baby ~> sudo nmap -sS -sU -A --version-intensity 9 --open --traceroute --packet-trace 192.168.0.1
